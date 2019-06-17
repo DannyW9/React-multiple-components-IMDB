@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import FilmList from '../components/FilmList';
 import FilmForm from '../components/FilmForm';
+import MoreReleasesButton from '../components/MoreReleasesButton'
 
 class FilmBox extends Component {
 
@@ -43,6 +44,8 @@ class FilmBox extends Component {
         <FilmForm />
         <hr/>
         <FilmList data={this.state.data}/>
+        <hr/>
+        <MoreReleasesButton />
       </div>
     );
   }

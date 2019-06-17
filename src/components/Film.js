@@ -3,8 +3,9 @@ import React from 'react';
 const Film = (props) => {
   return (
     <div>
-      <a href={props.url}><h3>{props.name}</h3></a>
-
+      <ul>
+        <li><a href={props.url}><h3>{props.name}</h3></a></li>
+      </ul>
     </div>
   );
 }
