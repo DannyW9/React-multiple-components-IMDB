@@ -5,11 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <FilmForm />
-      <hr/>
       <FilmBox />
-    </div>
   );
 }
 
