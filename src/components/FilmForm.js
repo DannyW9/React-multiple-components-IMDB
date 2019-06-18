@@ -32,14 +32,11 @@ class FilmForm extends Component{
 
   render(){
     return(
-      <div>
-        <h1>FilmForm</h1>
         <form onSubmit={this.handleSubmit}>
           <input type="text" placeholder="Enter film title" value={this.state.name} onChange={this.handleNameChange} />
           <input type="text" placeholder="Enter IMDB url" value={this.state.url} onChange={this.handleUrlChange} />
           <input type="submit" value="Submit new film" />
         </form>
-      </div>
 
     );
   }

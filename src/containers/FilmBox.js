@@ -50,6 +50,7 @@ class FilmBox extends Component {
       <div>
         <FilmForm onFilmSubmit={this.handleFilmSubmit} />
         <hr/>
+        <h1> Upcoming Film Releases </h1>
         <FilmList data={this.state.data}/>
         <hr/>
         <MoreReleasesButton />
