@@ -36,12 +36,19 @@ class FilmBox extends Component {
         }
       ]
     }
+    this.handleFilmSubmit = this.handleFilmSubmit.bind(this);
+  }
+
+  handleFilmSubmit(newFilm){
+    newFilm.id = Date.now();
+    const updatedFilms = [...this.state.data, newFilm];
+    this.setState({data: updatedFilms})
   }
 
   render() {
     return (
       <div>
-        <FilmForm />
+        <FilmForm onFilmSubmit={this.handleFilmSubmit} />
         <hr/>
         <FilmList data={this.state.data}/>
         <hr/>
